@@ -1,1 +1,6 @@
+.custom-navbar{
+    background-color: rgb(69, 171, 255);
+    color: rgb(0, 0, 0);
+}
 
+.custom-navbar .navbar-nav .nav-link
