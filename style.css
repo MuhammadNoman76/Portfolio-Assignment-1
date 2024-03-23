@@ -1,6 +1,11 @@
 .custom-navbar{
+    max-height: 100px; 
+    overflow-y: auto;
     background-color: rgb(69, 171, 255);
     color: rgb(0, 0, 0);
+   
 }
 
-.custom-navbar .navbar-nav .nav-link
+.custom-navbar .navbar-nav .nav-link {
+    color: white !important; 
+}
