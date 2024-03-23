@@ -9,3 +9,7 @@
 .custom-navbar .navbar-nav .nav-link {
     color: white !important; 
 }
+
+body{
+    background-color: black;
+}
