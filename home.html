@@ -1,58 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Pages</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
-    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
-    
-
-    <nav class="navbar navbar-expand-lg navbar-light custom-navbar" >
-
-            <a class="navbar-brand" href="#">
-              <img src="hello.png" alt="Bootstrap" width="30" height="24">
-            </a>
-     
-
-        <a class="navbar-brand" href="#">Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div  class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacts</a>
-                </li>
-            </ul>
-          
+    <header class="header">
+        <a href="#" class="logo">Logo</a>
+        <input type="checkbox" id="check">
+        <label for="check" class="icon">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href="#" style="--i:0;">Home</a>
+            <a href="#" style="--i:1;">About</a>
+            <a href="#" style="--i:2;">Projects</a>
+            <a href="#" style="--i:3;">Services</a>
+            <a href="#" style="--i:4;">Contacts</a>
+        </nav>
+    </header>
+    <section class="intro">
+        <div class="profile-container">
+            <div class="profile active">
+                <img src="maida2.png" alt="Profile Picture">
+            </div>
+            <div class="profile">
+                <img src="Noman.png" alt="Second Person Picture">
+            </div>
         </div>
-    </nav>
+        <div class="quote-container">
+            <div class="quote active">
+                <p>"Any quotation or saying from a famous coder goes here."</p>
+                <span>- Famous Coder Name</span>
+                <div class="botton">
+                    <button type="buttons">More About Me</button>
+                </div>
+            </div>
+            <div class="quote">
+                <p>"Any quotation or saying from the second person goes here." Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quaerat cum sint in ut pariatur, corporis, voluptas, aliquam assumenda sit sunt deserunt molestias dicta. At qui itaque eius iusto nesciunt!</p>
+                <span>- Second Person Name</span>
+                <div class="buttons">
+                    <button type="button">More About Me</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 
 
+
+    <script>
+        const profiles = document.querySelectorAll('.profile');
+        const quotes = document.querySelectorAll('.quote');
+        let currentIndex = 0;
+
+        function showNextProfile() {
+            profiles[currentIndex].classList.remove('active');
+            quotes[currentIndex].classList.remove('active');
+
+            currentIndex = (currentIndex + 1) % profiles.length;
+
+            profiles[currentIndex].classList.add('active');
+            quotes[currentIndex].classList.add('active');
+        }
+
+        setInterval(showNextProfile, 6000); // Change profile and quote every 3 seconds
+    </script>
 </body>
-
 </html>
