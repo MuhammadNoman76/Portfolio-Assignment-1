@@ -13,3 +13,13 @@
 body{
     background-color: black;
 }
+
+#navbar-logo {
+    transition: width 0.3s, height 
+}
+
+
+#navbar-logo.collapsed {
+    width: 50px;
+    height: auto; 
+}
