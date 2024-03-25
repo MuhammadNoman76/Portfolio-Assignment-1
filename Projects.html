@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Pages</title>
+    <title>Projects Pages</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .projects {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4rem 2rem;
+            margin-top: 80px;
+        }
+
+        .project-row {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-card {
+            max-width: 250px;
+            padding: 1rem;
+            background-color: #f2f2f2;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            transform: scale(0.8);
+        }
+
+        .project-card:hover {
+            transform: scale(1);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+    </style>
 </head>
+
 <body>
     <header class="header">
         <a href="#" class="logo">Logo</a>
@@ -24,5 +61,46 @@
         </nav>
     </header>
 
+    <section class="projects">
+
+        <div>
+            <h1 style="color: white; font-weight: BOLD;"> OUR PROJECTS</h1>
+        </div>
+        <div class="project-row">
+            <div class="project-card">
+                <img src="Assets/Chatboot.jpg" alt="Project 1">
+                <h3>LSTM ATTENTION CHATBOT IN URDU</h3>
+                <p>An auto-encoder Urdu chatbot using an attention mechanism with an LSTM model to answer university-related questions.</p>
+            </div>
+            <div class="project-card">
+                <img src="Assets/library.jpg" alt="Project 2">
+                <h3>LIBRARY MANAGEMENT SYSTEM</h3>
+                <p>An advanced automated library management system using Java and Java Swing.</p>
+            </div>
+            <div class="project-card">
+                <img src="Assets/autocodecorrection.jpg" alt="Project 3">
+                <h3>AUTO PYTHON CODE CORRECTION</h3>
+                <p>Automatic code correction for the Python language using an LLM BERT model.</p>
+            </div>
+        </div>
+        <div class="project-row">
+            <div class="project-card">
+                <img src="Assets/BERT URDU CHATBOT.jpg" alt="Project 4">
+                <h3>URDU CHATBOT USING BERT MODEL</h3>
+                <p>An advanced conversational chatbot trained on a customized dataset that answers common questions.</p>
+            </div>
+            <div class="project-card">
+                <img src="Assets/Sentimental Analysis.jpg" alt="Project 5">
+                <h3>SENTIMENT ANALYSIS OF SENTIMENTS IN URDU</h3>
+                <p>A customized dataset in Urdu trained on a BERT LLM model that can identify over 10 sentiments.</p>
+            </div>
+            <div class="project-card">
+                <img src="Assets/Search Engine.jpg" alt="Project 6">
+                <h3>SEARCH ENGINE OPTIMIZATION ON SPECIFIC DATASET</h3>
+                <p>A customized Urdu corpus used to build a search engine using indexing and an advanced BM25 ranking algorithm.</p>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
