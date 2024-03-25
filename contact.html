@@ -88,7 +88,16 @@
     transform: scale(1.1); 
     filter: brightness(80%);
 }
+@media (max-width: 768px) {
+            .side {
+                margin-left: auto; /* Align left container to the right on small devices */
+                margin-right: auto;
+                text-align: center;
+            }
 
+            .col-lg-5.offset-lg-1 {
+                order: -1; /* Move the form to the top on small devices */
+            }
     </style>
 </head>
 
