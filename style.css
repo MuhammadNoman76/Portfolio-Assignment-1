@@ -9,7 +9,7 @@
 body {
     min-height: 100vh;
     /* background: : url() no-repeat; */
-    background: url(back2.jpg) no-repeat;
+    /* background: url(Back2.jpg) no-repeat; */
     background-color: antiquewhite;
     background-size: cover;
     background-position: center;
