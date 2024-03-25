@@ -38,9 +38,9 @@
 
 
         .left h3 {
-            color: white;
+            color: gainsboro;
             font-size: 20px;
-            font-weight: 600;
+            font-weight: 700;
             padding: 5px;
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
@@ -55,20 +55,25 @@
         }
 
         .skill-container {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
         .skills{
             margin-top: 40px;
         }
         .carosal{
             display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        /* .card .set{
-            width: 30px;
-            height: 30px;
-            object-fit: cover;
-            object-position: center;
-        } */
+        .card span{
+            width: 120px; display: flex; align-self: center;
+        }
+        .card{
+            margin-left: 12px;
+            margin-bottom: 60px;
+            margin-top: 10px;
+        }
+        
     </style>
 </head>
 
@@ -96,8 +101,8 @@
         <div class="container-fluid" style="margin-top: 40px;">
             <div class="row justify-content-left">
                 <div class="col-lg-5 left">
-                    <h3>My Creative Skills and Experiences</h3>
-                    <p class="para">
+                    <!-- <h3>My Creative Skills and Experiences</h3> -->
+                    <p class="para" style="margin-top: 35px;">
                         I specialize in front-end development, proficient in HTML, CSS, and JavaScript, with a focus on
                         crafting high-performance, responsive websites prioritizing user experience. I excel in
                         translating design concepts into functional interfaces and building small to medium-scale web
@@ -153,37 +158,42 @@
             </div>
         </div>
 
+
+        <!-- services  -->
         <div>
-            <h2 style="padding-top: 10px;">OUR SERVICES</h2>
+            <h2 style="padding-top: 30px;">SERVICES</h2>
         </div>
 <div class="carosal">
 
-
     <div class="card" style="width: 18rem;">
-        <span style="width: 120px; display: flex; align-self: center;"><img src="chatbot_6231553 (2).png"  class="card-img-top sett" alt="..."></span>
+        <span><img src="chatbot_6231553 (2).png"  class="card-img-top sett" alt="..."></span>
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Specializing in chatbot services, We leverage advanced AI technologies to create interactive and efficient conversational experiences</p>
         </div>
       </div>
 
 
       <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
+        <span><img src="coding.png"  class="card-img-top sett" alt="..."></span>
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">As a front-end developer, We provide cutting-edge solutions for web development, focusing on intuitive user interfaces and seamless experiences.</p>
         </div>
       </div>
 
 
       <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
+        <span><img src="design.png"  class="card-img-top sett" alt="..."></span>
         <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Employing graphic design, compelling visuals that enhance brand identity and resonate with target audiences, delivering impactful design solutions.</p>
         </div>
       </div>
 
 </div>
     </main>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>
