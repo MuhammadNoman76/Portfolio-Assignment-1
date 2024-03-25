@@ -88,7 +88,16 @@
     transform: scale(1.1); 
     filter: brightness(80%);
 }
+@media (max-width: 768px) {
+            .side {
+                margin-left: auto; /* Align left container to the right on small devices */
+                margin-right: auto;
+                text-align: center;
+            }
 
+            .col-lg-5.offset-lg-1 {
+                order: -1; /* Move the form to the top on small devices */
+            }
     </style>
 </head>
 
@@ -129,7 +138,7 @@
                     opportunities to be part of your visions <br>
                 </p>
                 <div class="icons">
-                    <img src="Assets/msg.png" alt=""><span>Mail me
+                    <img src="Assets/bg-msg.png" alt=""><span>Mail me
                         <p style="text-align: center; font-weight: 600; cursor: pointer;">
                             maidasaeed311@gmail.com
                 
@@ -137,7 +146,7 @@
                     </span>
                 </div>
                 <div class="icons">
-                    <img src="Assets/call.png" alt=""><span>Call me<p
+                    <img src="Assets/bg-call.png" alt=""><span>Call me<p
                             style="text-align: center; font-weight: 600;">
                             0300-134647342</p></span>
                 </div>
