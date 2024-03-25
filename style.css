@@ -9,13 +9,8 @@
 body {
     min-height: 100vh;
     /* background: : url() no-repeat; */
-<<<<<<< HEAD
-    /* background: url(Back2.jpg) no-repeat; */
-    background-color: antiquewhite;
-=======
     background: url(Assets/back2.jpg) no-repeat;
     background-color: rgb(0, 8, 76);
->>>>>>> 238be81af39dc65f69db46d4d881b3fa7a937485
     background-size: cover;
     background-position: center;
 }
