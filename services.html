@@ -35,36 +35,40 @@
 
         }
 
-        .title {
-            color: whitesmoke;
-            text-align: center;
-            text-decoration-line: overline;
-
-        }
 
 
         .left h3 {
-            color: aliceblue;
+            color: white;
             font-size: 20px;
             font-weight: 600;
             padding: 5px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
         .left {
-            margin-left: 70px;
+            margin-left: 80px;
+            margin-top: 10px;
         }
 
         .para {
             color: white;
         }
 
-        .skills {
-            margin-top: 30px;
+        .skill-container {
+            margin-bottom: 10px;
         }
-
-        span{
-            margin-bottom: 5px;
+        .skills{
+            margin-top: 40px;
         }
+        .carosal{
+            display: flex;
+        }
+        /* .card .set{
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            object-position: center;
+        } */
     </style>
 </head>
 
@@ -89,7 +93,6 @@
         <h2>
             MY SKILLS
         </h2>
-        <p class="title">What I know</p>
         <div class="container-fluid" style="margin-top: 40px;">
             <div class="row justify-content-left">
                 <div class="col-lg-5 left">
@@ -107,39 +110,79 @@
                 </div>
                 <!-- right  -->
                 <div class="col-lg-5 offset-lg-1 skills">
-                    <span style="color: white;">HTML</span>
-                    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar bg-success" style="width: 95%">95%</div>
-                    </div><br>
+                    <div class="skill-container">
+                        <span style="color: white;">HTML</span>
+                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-success" style="width: 95%">95%</div>
+                        </div>
+                    </div>
 
-                    <span style="color: white;">CSS</span>
-                    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50"
-                        aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar bg-info text-dark" style="width: 80%">85%</div>
-                    </div><br>
+                    <div class="skill-container">
+                        <span style="color: white;">CSS</span>
+                        <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-info text-dark" style="width: 80%">85%</div>
+                        </div>
+                    </div>
 
-                    <span style="color: white;">JavaScript</span>
-                    <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
-                        aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar bg-warning text-dark" style="width: 45%">45%</div>
-                    </div><br>
+                    <div class="skill-container">
+                        <span style="color: white;">JavaScript</span>
+                        <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-danger" style="width: 45%">45%</div>
+                        </div>
+                    </div>
 
-                    <span style="color: white;">Python</span>
-                    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100"
-                        aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar bg-danger" style="width: 55%">55% </div>
-                    </div><br>
+                    <div class="skill-container">
+                        <span style="color: white;">Python</span>
+                        <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-warning text-dark" style="width: 55%">55% </div>
+                        </div>
+                    </div>
 
-                    <span style="color: white;">WordPress</span>
-                    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100"
-                        aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar bg-primary" style="width: 80%">80% </div>
-                    </div><br>
+                    <div class="skill-container">
+                        <span style="color: white;">WordPress</span>
+                        <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-primary" style="width: 80%">80% </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <div>
+            <h2 style="padding-top: 10px;">OUR SERVICES</h2>
+        </div>
+<div class="carosal">
+
+
+    <div class="card" style="width: 18rem;">
+        <span style="width: 120px; display: flex; align-self: center;"><img src="chatbot_6231553 (2).png"  class="card-img-top sett" alt="..."></span>
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+</div>
     </main>
 </body>
 
