@@ -4,283 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>About Us</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <style>
-        body,
-        html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 10;
-        }
-
-        .about-heading {
-            text-align: center;
-            padding-top: 90px;
-            padding-bottom: 0px;
-            font-size: xx-large;
-            color: white;
-        }
-
-        .about-us {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            padding: 0%;
-            margin: 0;
-        }
-
-        .carousel {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            position: relative;
-        }
-
-        .slide {
-            display: none;
-            width: 80%;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, .1);
-            color: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            max-width: 900px;
-            margin: 80px 20px;
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            overflow-y: auto;
-            max-height: calc(100% - 160px);
-        }
-
-        .slide.active {
-            display: block;
-        }
-
-        .content h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .content p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        .carousel-controls {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            padding: 0 20px;
-            box-sizing: border-box;
-        }
-
-        .carousel-controls button {
-            font-size: 24px;
-            background-color: rgba(255, 255, 255, 0.5);
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-
-        @media (max-width: 768px) {
-            .carousel-controls {
-                display: none;
-            }
-        }
-    </style>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">Logo</a>
-        <input type="checkbox" id="check">
-        <label for="check" class="icon">
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <i class='bx bx-x' id="close-icon"></i>
-        </label>
-        <nav class="navbar">
-            <a href="home.html" style="--i:0; ">Home</a>
-            <a href="about.html" style="--i:1; color: yellow; font-weight: bold;">About</a>
-            <a href="Projects.html" style="--i:2;">Projects</a>
-            <a href="services.html" style="--i:3;">Services</a>
-            <a href="contact.html" style="--i:4;">Contacts</a>
-        </nav>
 
-    </header>
-
-    <section>
-        <section>
-            <div class="about-heading">
-                <h1>About Us</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark  navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Assets/logo_iqra.png" alt="Logo" width="120" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
             </div>
-        </section>
-    </section>
+        </div>
+    </nav>
 
-
-    <section class="about-us">
-
-        <div class="carousel">
-            <div class="slide active">
-                <div class="content">
-                    <h2 style="color: yellow; font-weight: bold;">- About Muhammad Noman <br><br></h2>
-                    <p>Hey there! I'm Muhammad Noman, a final year student at Iqra University in Karachi, Pakistan. My
-                        passion lies at the intersection of Natural Language Processing (NLP) and promoting Urdu
-                        language and culture through innovative technologies.
-
-                        Currently, I'm deeply involved in several NLP projects, including Langchain, where I explore the
-                        intricacies of language processing. I work with large language models such as BERT, GPT, and
-                        LAAMA to delve into the nuances of human language. One of my key endeavors is to leverage these
-                        advancements to propel Urdu language forward in Pakistan. To facilitate this, I've developed
-                        UrduLughaat, a comprehensive library tailored for preprocessing Urdu text, paving the way for
-                        further exploration and utilization of Urdu in NLP applications.
-
-                        Beyond NLP, I'm also passionate about web development. I'm constantly honing my skills in this
-                        domain, seeking to create impactful digital experiences and solutions.
-
-                        Join me on this journey as I combine my expertise in NLP, dedication to Urdu language advocacy,
-                        and enthusiasm for web development to make meaningful contributions in the tech world and
-                        beyond.</p>
+    <h1 class="text-center">About Us</h1>
+    <section class="about-us py-5">
+        <div class="container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="content">
+                            <h2 class="text-warning fw-bold">- About Muhammad Noman</h2>
+                            <p>Hey there! I'm Muhammad Noman, a final year student at Iqra University in Karachi,
+                                Pakistan. My passion lies at the intersection of Natural Language Processing (NLP) and
+                                promoting Urdu language and culture through innovative technologies. Currently, I'm
+                                deeply involved in several NLP projects, including Langchain, where I explore the
+                                intricacies of language processing. I work with large language models such as BERT, GPT,
+                                and LAAMA to delve into the nuances of human language. One of my key endeavors is to
+                                leverage these advancements to propel Urdu language forward in Pakistan. To facilitate
+                                this, I've developed UrduLughaat, a comprehensive library tailored for preprocessing Urdu
+                                text, paving the way for further exploration and utilization of Urdu in NLP
+                                applications. Beyond NLP, I'm also passionate about web development. I'm constantly
+                                honing my skills in this domain, seeking to create impactful digital experiences and
+                                solutions. Join me on this journey as I combine my expertise in NLP, dedication to Urdu
+                                language advocacy, and enthusiasm for web development to make meaningful contributions
+                                in the tech world and beyond.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="content">
+                            <h2 class="text-warning fw-bold">- About Maida Saeed</h2>
+                            <p>Hello! I'm Maida Saeed, a final year student at Iqra University in Karachi, Pakistan.
+                                My journey in the realm of technology has been marked by a blend of passion, dedication,
+                                and a relentless drive for growth. With a solid foundation in Java and C languages, I've
+                                dived into the intricate world of software development. My expertise extends to frontend
+                                development, where I've begun my journey with HTML and CSS, crafting visually appealing
+                                and user-friendly interfaces. What sets me apart is not just my technical skills, but
+                                also my innate motivation and strong communication abilities. I thrive on challenges,
+                                constantly seeking opportunities to learn and grow in the ever-evolving landscape of
+                                technology. As I embark on this journey, I'm eager to expand my horizons, tackle new
+                                challenges, and make meaningful contributions in the world of tech.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="slide">
-                <div class="content">
-                    <h2 style="color: yellow; font-weight: bold;">- About Maida Saeed <br> <br></h2>
-                    <p>Hello! I'm Maida Saeed, a final year student at Iqra University in Karachi, Pakistan. My journey
-                        in the realm of technology has been marked by a blend of passion, dedication, and a relentless
-                        drive for growth.
-
-                        With a solid foundation in Java and C languages, I've dived into the intricate world of software
-                        development. My expertise extends to frontend development, where I've begun my journey with HTML
-                        and CSS, crafting visually appealing and user-friendly interfaces.
-
-                        What sets me apart is not just my technical skills, but also my innate motivation and strong
-                        communication abilities. I thrive on challenges, constantly seeking opportunities to learn and
-                        grow in the ever-evolving landscape of technology.
-
-                        As I embark on this journey, I'm eager to expand my horizons, tackle new challenges, and make
-                        meaningful contributions in the world of tech.</p>
-                </div>
-            </div>
-            <div class="carousel-controls" style="display: flex;">
-                <button id="prevSlide" class="slides_buttons">
-                    <i class='bx bx-chevron-left'></i>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button id="nextSlide" class="slides_buttons">
-                    <i class='bx bx-chevron-right'></i>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
     </section>
 
-    <script>
-        const slides = document.querySelectorAll('.slide');
-        let currentSlide = 0;
-
-        function showSlide(n) {
-            slides.forEach((slide, i) => {
-                if (i === n) {
-                    slide.classList.add('active');
-                } else {
-                    slide.classList.remove('active');
-                }
-            });
-        }
-
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        const prevSlideBtn = document.getElementById('prevSlide');
-        const nextSlideBtn = document.getElementById('nextSlide');
-
-        prevSlideBtn.addEventListener('click', prevSlide);
-        nextSlideBtn.addEventListener('click', nextSlide);
-
-        // Swipe functionality
-        let xDown = null;
-        let yDown = null;
-
-        document.addEventListener('touchstart', handleTouchStart, false);
-        document.addEventListener('touchmove', handleTouchMove, false);
-
-        function handleTouchStart(evt) {
-            xDown = evt.touches[0].clientX;
-            yDown = evt.touches[0].clientY;
-        }
-
-        function handleTouchMove(evt) {
-            if (!xDown || !yDown) {
-                return;
-            }
-
-            const xUp = evt.touches[0].clientX;
-            const yUp = evt.touches[0].clientY;
-            const xDiff = xDown - xUp;
-            const yDiff = yDown - yUp;
-
-            if (Math.abs(xDiff) > Math.abs(yDiff)) {
-                /*most significant*/
-                if (xDiff > 0) {
-                    /* left swipe */
-                    nextSlide();
-                } else {
-                    /* right swipe */
-                    prevSlide();
-                }
-            } else {
-                /* vertical swipe */
-                if (yDiff > 0) {
-                    /* up swipe */
-                } else {
-                    /* down swipe */
-                }
-            }
-
-            /* reset values */
-            xDown = null;
-            yDown = null;
-        }
-
-        function toggleCarouselControls() {
-            const carouselControls = document.querySelector('.carousel-controls');
-            const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-
-            if (viewportWidth <= 768) {
-                carouselControls.style.display = 'none';
-            } else {
-                carouselControls.style.display = 'flex';
-            }
-        }
-
-        window.addEventListener('load', toggleCarouselControls);
-        window.addEventListener('resize', toggleCarouselControls);
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

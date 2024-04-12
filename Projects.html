@@ -4,129 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects Pages</title>
+    <title>Home Pages</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <style>
-        .projects {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 4rem 2rem;
-            margin-top: 80px;
-        }
-
-        .project-row {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .project-card {
-            max-width: 250px;
-            padding: 1rem;
-            background-color: #f2f2f2;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-            transform: scale(0.8);
-        }
-
-        .project-card:hover {
-            transform: scale(1);
-        }
-
-        .project-card img {
-            width: 100%;
-            height: auto;
-            border-radius: 4px;
-        }
-
-        /* For mobile devices */
-        @media (max-width: 768px) {
-            .project-row {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .project-card {
-                max-width: 100%;
-                transform: scale(1);
-            }
-
-            /* Single project shown horizontally */
-            .project-row:first-child {
-                flex-direction: row;
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-                /* For smooth scrolling on iOS devices */
-            }
-
-            .project-row:first-child .project-card {
-                max-width: 250px;
-                /* Adjust the width as needed */
-                flex-shrink: 0;
-                /* Prevent cards from shrinking */
-            }
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">PORTFOLIO</a>
-        <input type="checkbox" id="check">
-        <label for="check" class="icon">
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <i class='bx bx-x' id="close-icon"></i>
-        </label>
-        <nav class="navbar">
-            <a href="home.html" style="--i:0; ">Home</a>
-            <a href="about.html" style="--i:1;">About</a>
-            <a href="Projects.html" style="--i:2; color: yellow; font-weight: bold;">Projects</a>
-            <a href="services.html" style="--i:3;">Services</a>
-            <a href="contact.html" style="--i:4;">Contacts</a>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark  navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Assets/logo_iqra.png" alt="Logo" width="120" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
     <section class="projects">
 
         <div>
-            <h1 style="color: white; font-weight: BOLD;"> OUR PROJECTS</h1>
+            <h1 style="color: white; font-weight: BOLD; ;"> OUR PROJECTS</h1>
             <br>
         </div>
         <div class="project-row">
             <div class="project-card">
                 <img src="Assets/Chatboot.jpg" alt="Project 1">
-                <h3>LSTM ATTENTION CHATBOT IN URDU</h3>
+                <h3 class="h3">LSTM ATTENTION CHATBOT IN URDU</h3>
                 <p>An auto-encoder Urdu chatbot using an attention mechanism with an LSTM model to answer
                     university-related questions.</p>
             </div>
             <div class="project-card">
                 <img src="Assets/library.jpg" alt="Project 2">
-                <h3>LIBRARY MANAGEMENT SYSTEM</h3>
+                <h3 class="h3">LIBRARY MANAGEMENT SYSTEM</h3>
                 <p>An advanced automated library management system using Java and Java Swing.</p>
             </div>
             <div class="project-card">
                 <img src="Assets/autocodecorrection.jpg" alt="Project 3">
-                <h3>AUTO PYTHON CODE CORRECTION</h3>
+                <h3 class="h3">AUTO PYTHON CODE CORRECTION</h3>
                 <p>Automatic code correction for the Python language using an LLM BERT model.</p>
             </div>
         </div>
         <div class="project-row">
             <div class="project-card">
                 <img src="Assets/BERT URDU CHATBOT.jpg" alt="Project 4">
-                <h3>URDU CHATBOT USING BERT MODEL</h3>
+                <h3 class="h3">URDU CHATBOT USING BERT MODEL</h3 >
                 <p>An advanced conversational chatbot trained on a customized dataset that answers common questions.</p>
             </div>
             <div class="project-card">
                 <img src="Assets/Sentimental Analysis.jpg" alt="Project 5">
-                <h3>SENTIMENT ANALYSIS OF 10 SENTIMENTS IN URDU</h3>
+                <h3 class="h3">SENTIMENT ANALYSIS OF 10 SENTIMENTS IN URDU</h3>
                 <p>A customized dataset in Urdu trained on a BERT LLM model that can identify over 10 sentiments.</p>
             </div>
             <div class="project-card">
                 <img src="Assets/Search Engine.jpg" alt="Project 6">
-                <h3>SEARCH ENGINE OPTIMIZATION ON SPECIFIC DATASET</h3>
+                <h3 class="h3">SEARCH ENGINE OPTIMIZATION ON SPECIFIC DATASET</h3>
                 <p>A customized Urdu corpus used to build a search engine using indexing and an advanced BM25 ranking
                     algorithm.</p>
             </div>
