@@ -368,3 +368,18 @@ body {
         flex-shrink: 0;
     }
 }
+
+/* About */
+.content {
+    text-align: center; 
+    padding: 0 20px;
+    margin-left: 120px;
+    margin-right: 120px;
+    align-items: center;
+    text-align: center;
+    text-align: justify;
+    position: relative; 
+}
+.text-center{
+    padding-top: 20px;
+}
